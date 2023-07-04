@@ -3,6 +3,6 @@
 <div class="box">
     <div class="container">
         <div class="top">
-            <header>{{ $lulus ? $lulus : $tidakLulus }}</header>
+            <header>{{ $status }}</header>
         </div>
 @endSection

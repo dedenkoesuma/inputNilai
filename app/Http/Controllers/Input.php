@@ -17,16 +17,14 @@ class Input extends Controller
         $nilai2 = $request->input('nilaiB');
         if($nilai1 >= 80 && $nilai2 >= 80 ) {
             $params = [
-                "lulus" => "Selamat Anda Lulus",
-                "tidakLulus" => "Anda Tidak Lulus"
+                "status" => "Selamat Anda Lulus",
             ];
             return view('result', $params);
         }else{
-            $params1 = [
-                "lulus" => "Anda Tidak Lulus",
-                "tidakLulus" => "Anda Tidak Lulus"
+            $params = [
+                "status" => "Anda Tidak Lulus",
             ];
-            return view('result',$params1);
+            return view('result',$params);
         }
     }
 }
